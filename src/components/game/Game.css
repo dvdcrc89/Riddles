@@ -1,0 +1,56 @@
+
+.game{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.riddle{
+    margin:0 auto;
+    font-family: 'Gaegu', cursive;
+    background:rgba(255,255,255,0.6);
+    font-size: 5vh;
+    margin: 50px;
+    color:black;
+    padding: 5px;
+}
+.riddle button{
+    position: relative;
+    float:right;
+    background: transparent;
+    border:none;
+    font-family: 'Gaegu', cursive;
+
+
+}
+
+.answ{
+    margin:0 auto;
+    font-family: 'Gaegu', cursive;
+    padding: 10px;
+    font-size: 4vh;
+    background: transparent;
+    border:none;
+    background:rgba(255,255,255,0.6);
+
+
+
+}
+
+.answ:hover{
+    margin:0 auto;
+    font-family: 'Gaegu', cursive;
+    padding: 10px;
+    font-size: 5vh;
+    background: transparent;
+    border:none;
+    color:red;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .game{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
