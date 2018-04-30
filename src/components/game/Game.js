@@ -12,15 +12,25 @@ export default class Game extends Component {
         this.state = {
             searchTerm: '',
             current:shuffle(riddles)[0],
+            points:0
         }
         this.searchUpdated = this.searchUpdated.bind(this)
     }
 
     checkAnswer(answ){
         if(answ==this.state.current.answer) {
-            console.log("Right");
+            alert("Well Done");
+            this.setState({
+                points:this.state.points +1,
+                current:shuffle(riddles)[0],
+
+            })
         } else {
-            console.log("wrong");
+            alert("wrong");
+            this.setState({
+                current:shuffle(riddles)[0],
+
+            })
         }
     }
 
@@ -34,6 +44,9 @@ export default class Game extends Component {
                     <button onClick={()=>{
                         this.setState({current:shuffle(riddles)[0]}
                         )}}>SKIP</button>
+                    <button onClick={()=>{
+                            alert(this.state.current.answer)}
+                        }>Solution</button>
 
                 </div>
 
@@ -49,7 +62,7 @@ export default class Game extends Component {
                     )
                 }) : undefined}
                 </div>
-                <SearchInput className="search-input" onChange={this.searchUpdated} />
+                <SearchInput className="search-input"  onChange={this.searchUpdated} />
 
             </div>
         </div>

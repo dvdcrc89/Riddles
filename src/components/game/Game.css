@@ -30,7 +30,9 @@
     font-size: 4vh;
     background: transparent;
     border:none;
+    border: 1px dashed black;
     background:rgba(255,255,255,0.6);
+    margin-right: 3px;
 
 
 
@@ -43,8 +45,16 @@
     font-size: 5vh;
     background: transparent;
     border:none;
+    border: 1px dashed red;
+
     color:red;
 
+}
+
+.search-input input{
+    background: transparent;
+    font-size: 6vh;
+    width: max;
 }
 
 @media only screen and (max-width: 768px) {
@@ -52,5 +62,7 @@
         width: 100%;
         margin: 0 auto;
     }
-
+    .answ{
+        font-size: 5vh;
+    }
 }
