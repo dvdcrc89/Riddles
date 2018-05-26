@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Game.css';
 import {riddles} from "../game/riddle";
-const shuffle = require('shuffle-array');
+
 import SearchInput, {createFilter} from 'react-search-input'
 
 const KEYS_TO_FILTERS = ['answer']
